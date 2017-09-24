@@ -1,8 +1,10 @@
 # cuda-tiled-matrix-multiplication
 **Overview**
+
 Optimized Parallel Tiled Approach to perform Matrix Multiplication by taking advantage of the lower latency, higher bandwidth shared memory within GPU thread blocks.
 
 **Execution**
+
 * Run "make" to build the executable of this file.
 * For debugging, run "make dbg=1" to build a debuggable version of the executable binary.
 * Run the binary using "./~name-of-the-artifact~"
@@ -14,7 +16,7 @@ tialized matrices such that the matrix operation M * N is valid, and P
 is properly sized to hold the result. After the device multiplication is in-
 voked, it will compute the correct solution matrix using the CPU, and
 compare that solution with the device-computed solution. If it matches
-(within a certain tolerance), if will print out “Test PASSED” to the screen
+(within a certain tolerance), it will print out “Test PASSED” to the screen
 before exiting.
 
 * *One argument*: The application will use the random initialization to cre-
@@ -33,6 +35,7 @@ vided by the first three arguments, as described above, and write its output
 to the file provided in the fourth.
 
 **Input File Format**
+
 The (optional) input files should have a single line containing whitespace-
 separated floating point numbers representing the matrix data. There should
 be m · n numbers on this line for a m × n matrix, where the first n numbers are
